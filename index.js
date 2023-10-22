@@ -34,7 +34,7 @@ inquirer.prompt([
   {
     type: "input",
     message: "How do you test the project?",
-    name: "",
+    name: "test",
   },
   {
     type:"list",
@@ -51,12 +51,13 @@ inquirer.prompt([
         "Mozilla",
         "Unilicense",
         "Other"
-    ]
+    ],
+    name: "license"
     },
     //how to I add a badge to appear?
     {
         type:"input",
-        message:"Enter GitHun username.",
+        message:"Enter GitHub username.",
         name:"name"
     },
     {
@@ -64,7 +65,10 @@ inquirer.prompt([
         message:'Enter your email address.',
         name: "email"
     }
-]);
+])
+// .then(responses => {
+//     console.log(responses)
+// });
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {}
