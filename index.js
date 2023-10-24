@@ -2,6 +2,7 @@
 const inquirer = require("inquirer");
 const fs = require("fs");
 const generateMarkdown = require("./utils/generateMarkdown");
+const { error } = require("console");
 
 // TODO: Create an array of questions for user input
 // const questions = [];
@@ -27,6 +28,24 @@ inquirer.prompt([
     name: "usage",
   },
   {
+    type: "list",
+    message: "What license was selected for this project?",
+    choices: [
+      "Apache",
+      "GNU",
+      "MIT",
+      "BSD Simplified",
+      "BSD New",
+      "Boost",
+      "Creative",
+      "Eclipse",
+      "Mozilla",
+      "Unilicense",
+      "Other",
+    ],
+    name: "license",
+  },
+  {
     type: "input",
     message: "Who are the contributors to this project?",
     name: "contributors",
@@ -37,44 +56,63 @@ inquirer.prompt([
     name: "test",
   },
   {
-    type:"list",
-    message:"What license was selected for this project?",
-    choices:[
-        "Apache",
-        "GNU",
-        "MIT",
-        "BSD Simplified",
-        "BSD New",
-        "Boost",
-        "Creative",
-        "Eclipse",
-        "Mozilla",
-        "Unilicense",
-        "Other"
-    ],
-    name: "license"
-    },
-    //how to I add a badge to appear?
-    {
-        type:"input",
-        message:"Enter GitHub username.",
-        name:"name"
-    },
-    {
-        type:"input",
-        message:'Enter your email address.',
-        name: "email"
-    }
-])
+    type: "input",
+    message: "Questions? Please add an issue to receive a response or contact me via the below email.",
+    name: "questions",
+  },
+  {
+    type: "input",
+    message: "How does one install or implement the code.",
+    name: "install",
+  },
+  {
+    type: "input",
+    message:
+      "Add a screenshot of completed project ![alt text](assets/images/screenshot.png)",
+    name: "screenshot",
+  },
+
+  {
+    type: "input",
+    message: "Enter GitHub username.",
+    name: "name",
+  },
+  {
+    type: "input",
+    message: "Enter your email address.",
+    name: "email",
+  },
+];
 // .then(responses => {
-//     console.log(responses)
-// });
+//   const {title, description, installtion, usage, contributors, test, license, screenshot, name, email}= responses;
+//   fs.writeFile("generateMarkdown.js",
+//   )
+
+
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+function writeToFile(fileName, data, ) {
+  fs.writeFile(fileName, data, function(err){
+    console.log(fileName)
+      console.log(data)
+      if(err) {
+        return console.log(err)
+      } else {
+        console.log("Check out your new readme file!")
+      }
+    }) 
+  
+
 
 // TODO: Create a function to initialize app
-function init() {}
+function init() {
+  inquirer.prompt(questions).then(function(data){
+    writeToFile("README.md", generateMarkdown(data));
+    console,log(data)
+  })
+    
+  }
+}
 
 // Function call to initialize app
 init();
