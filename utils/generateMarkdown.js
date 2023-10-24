@@ -62,11 +62,10 @@ function generateMarkdown(data) {
   ${data.description}
 
   ## Table of Contents
-  * [Installation](#installation)
+  * [Install](#install)
   * [Usage](#usage)
   * [License](#license)
-  * [Contributing](#contributors)
-  * [Test](#test)
+  * [Contributors](#contributors)
   * [Issues](#issues)
   
   ## Installation 
@@ -78,11 +77,15 @@ function generateMarkdown(data) {
   ## License 
   This project is license under ${data.license}
 
-  ## Contributing 
+  ## Contributors 
   ${data.contributors}
 
-  ## Tests
-  ${data.test}
+  ## Issues
+  ${data.issues}
+
+  ## Screenshot
+  ${data.screenshot}
+
 
   ## Questions
   If you would like to leanr more about this project, please do not hesitate to contact me directly at ${data.email}. You can view more of my projects at https://github.com/${data.github}.

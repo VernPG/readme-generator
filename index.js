@@ -20,7 +20,7 @@ inquirer.prompt([
   {
     type: "input",
     message: "What are the installation instructions?",
-    name: "installation",
+    name: "install",
   },
   {
     type: "input",
@@ -51,19 +51,9 @@ inquirer.prompt([
   },
   {
     type: "input",
-    message: "How do you test the project?",
-    name: "test",
-  },
-  {
-    type: "input",
     message:
       "Issues? Please add an issue to receive a response or contact me via the below email.",
     name: "issues",
-  },
-  {
-    type: "input",
-    message: "How does one install or implement the code.",
-    name: "install",
   },
   {
     type: "input",
@@ -107,3 +97,4 @@ function writeToFile(fileName, data) {
 
 // Function call to initialize app
 init();
+
