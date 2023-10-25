@@ -80,6 +80,9 @@ function generateMarkdown(data) {
   ## Contributors 
   ${data.contributors}
 
+  ## Tests
+  ${data.tests}
+
   ## Issues
   ${data.issues}
 
@@ -92,4 +95,4 @@ function generateMarkdown(data) {
 `;
 }
 
-module.exports = generateMarkdown;
+module.exports = {generateMarkdown};
