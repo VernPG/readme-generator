@@ -65,7 +65,7 @@ var questions = [
     type: "input",
     message:
       "Add a screenshot of completed project ![alt text](assets/images/screenshot.png)",
-    name: "screenshot",
+    name: "images",
   },
 
   {

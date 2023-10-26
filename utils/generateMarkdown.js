@@ -85,8 +85,8 @@ function generateMarkdown(data) {
   ## Issues
   ${data.issues}
 
-  ## Screenshot
-  ${data.screenshot}
+  ## Images
+  ${data.images}
 
 
   ## Questions
