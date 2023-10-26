@@ -1,12 +1,12 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
-  if (!license) {
-    return ``;
-  } else {
-    return `![Github License](https://img.shields.io/github/license/<Github-Username>/<Repository>)`;
-  }
-}
+  if (!license) 
+    return ``; }
+  // } else {
+  //   return `[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)`;
+  // }
+
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
@@ -45,18 +45,19 @@ function renderLicenseLink(license) {
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
-  if (!license) {
-    reurn``;
-  } else {
-    return `## Licenses`;
-  }
-}
+  if (!license) ;
+  // {
+  //   return``;
+  // } 
+  // else {
+  //   return `## Licenses`;
+  // }
+};
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   return `# ${data.title}
 
-  ${renderLicenseBadge(data.license)}
 
   ## Description 
   ${data.description}
@@ -75,7 +76,10 @@ function generateMarkdown(data) {
   ${data.usage}
 
   ## License 
-  This project is license under ${data.license}
+  The project license used is ${data.license}.
+  You can find the link at ${renderLicenseLink(data.license)}
+  ${renderLicenseSection(data.license)}
+  ${renderLicenseBadge(data.license)}
 
   ## Contributors 
   ${data.contributors}
@@ -91,7 +95,7 @@ function generateMarkdown(data) {
 
 
   ## Questions
-  If you would like to leanr more about this project, please do not hesitate to contact me directly at ${data.email}. You can view more of my projects at https://github.com/${data.github}.
+  If you would like to leanr more about this project, please do not hesitate to contact me directly at ${data.email}. You can view more of my projects at https://github.com/${data.githubName}.
 `;
 }
 

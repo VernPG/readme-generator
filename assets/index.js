@@ -71,7 +71,7 @@ var questions = [
   {
     type: "input",
     message: "Enter GitHub username.",
-    name: "name",
+    name: "githubName",
   },
   {
     type: "input",
