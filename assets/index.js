@@ -58,7 +58,7 @@ var questions = [
   {
     type: "input",
     message:
-      "Issues? Please add an issue to receive a response or contact me via the below email.",
+      "Issues? Please add an issue to receive a response or add a breif issue here.",
     name: "issues",
   },
   {
