@@ -90,7 +90,7 @@ function generateMarkdown(data) {
 
 
   ## Questions
-  If you would like to leanr more about this project, please do not hesitate to contact me directly at ${data.email}. You can view more of my projects at https://github.com/${data.githubName}.
+  If you would like to learn more about this project, please do not hesitate to contact me directly at ${data.email}. You can view more of my projects at https://github.com/${data.githubName}.
 `;
 }
 

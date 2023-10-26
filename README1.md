@@ -9,32 +9,36 @@
   * [Usage](#usage)
   * [License](#license)
   * [Contributors](#contributors)
+  * [Tests](#tests)
   * [Issues](#issues)
+  * [Questions](#questions)
   
   ## Installation 
-  Please run this application using your terminal and node.js
+   Please run this application using your terminal and node.js. This project also used VS Code and Node packages.
+
 
   ## Usage 
-  The intended use of this project is to reduce the time it takes to generate a READEME file .
+   The intended use of this project is to reduce the time it takes to generate a READEME file . 
 
   ## License 
-  The project license used is MIT
+  The project license used is MIT.
+
   You can find the link at [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-  ## Licenses
-  ![Github License](https://img.shields.io/github/license/<Github-Username>/<Repository>)
+  undefined
+  undefined
 
   ## Contributors 
   Veronica Perez
 
   ## Tests
-  The project was tested using node index.js within my terminal.
+   The project was tested using node index.js within my terminal.
 
   ## Issues
-  Issues with the project included having the license badge populate
+  No issues to report at this time. 
 
   ## Screenshot
-  ![alt text](homework/unit 09/assets/images/readme_generic_image.png)
+  ![Preview image](./assets/images/readme_img.png) 
 
 
   ## Questions
-  If you would like to leanr more about this project, please do not hesitate to contact me directly at VernPG@email.com. You can view more of my projects at https://github.com/undefined.
+  If you would like to learn more about this project, please do not hesitate to contact me directly at VernPG@email.com. You can view more of my projects at https://github.com/VernPG.
